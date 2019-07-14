@@ -1,0 +1,30 @@
+{{> header}}
+
+<form action="del" method="post" style="text-align: center">
+    <button class="btn btn-primary" type="submit" name="del" value="del">Delete All</button>
+</form>
+
+<div class="col-md-9">
+    <table class="table table-list-search" width="100%">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Region</th>
+            <th>Population</th>
+            <th>Currencies</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#list items}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{capital}}</td>
+                <td>{{region}}</td>
+                <td>{{population}}</td>
+                <td>{{currencies}}</td>
+            </tr>
+        {{/list}}
+        </tbody>
+    </table>
+</div>

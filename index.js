@@ -9,10 +9,10 @@ const axios = require('axios');
 
 //DB CONNECTION
 var con = mysql.createConnection({
-    host: "127.0.0.1",
-    user: "root",
-    password: "",
-    database: "webapi"
+    host: "yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "k8a6rwpon2j0ut87",
+    password: "r2ymoglmnggg9h5k",
+    database: "ns8446ng9bthhy1f"
 });
 
 //DECLARATION
@@ -93,7 +93,7 @@ server.post('/search', (req, res) => {
     })
 });
 
-server.listen(5000, () => {
+server.listen(process.env.PORT || 4000, () => {
     console.log('hello');
 });
 
